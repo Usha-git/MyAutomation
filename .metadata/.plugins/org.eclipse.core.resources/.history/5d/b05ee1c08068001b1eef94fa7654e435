@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Free CRM App test automation suite">
+  <test name="Free CRM App Test">
+    <classes>
+      <class name="com.crm.qa.testcases.LoginPageTest"/>
+      <class name="com.crm.qa.testcases.ContactsPageTest"/>
+      <class name="com.crm.qa.testcases.HomePageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+ 	

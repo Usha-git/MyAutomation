@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Automation Suite]">
+  <test name="Testng Feature test">
+    <classes>
+      <class name="test.ExceptionTimeoutTest"/>
+      <class name="test.GoogleTitleTest1"/>
+      <class name="test.TestNgFeatures"/>
+      <class name="test.TestNgBasics"/>
+      <class name="test.GoogleTest"/>
+      <class name="test.InvocationcountTest"/>
+    </classes>
+  </test> <!-- Testng Feature test -->
+  <test name="Testng Feature test(failed)">
+    <classes>
+      <class name="test.GoogleTitleTest1">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="googleTitleTest"/>
+        </methods>
+      </class> <!-- test.GoogleTitleTest1 -->
+      <class name="test.TestNgBasics">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closebrowser"/>
+          <include name="setUp"/>
+          <include name="enterURL"/>
+          <include name="login"/>
+          <include name="deleteAllCookies"/>
+          <include name="generateTestReport"/>
+          <include name="logOut"/>
+        </methods>
+      </class> <!-- test.TestNgBasics -->
+      <class name="test.GoogleTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.GoogleTest -->
+    </classes>
+  </test> <!-- Testng Feature test(failed) -->
+</suite> <!-- Failed suite [Automation Suite] -->
